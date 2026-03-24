@@ -1,12 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
-
 body {
     background-color: #FAFAFA;
     height: 2000px;
+    font-family: 'Inter', sans-serif;
     margin: 0;
+}
+
+h1, h2 , h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
 }
 
 
@@ -16,7 +30,18 @@ body {
     align-items: center;
     height: 50px;
     width: 100%;
-    background-color: white;
+    background-color: #334155 ;
+}
+
+.logo-img {
+    color: #F1F5F9;
+}
+.nav-menus a {
+    color: #F1F5F9;
+    text-decoration: none;
+}
+.nav-menus a:hover {
+    color:  #0EA5E9;
 }
 
 .nav-menus {
@@ -41,29 +66,46 @@ div.logo-img {
     gap: 40px;
     justify-content: center;
     align-items: center;
-    border: solid 2px red;
+    background-color: #F1F5F9;
 }
 .left-container {
-    border: 2px solid green;
     max-width: 500px;
     min-height: 350px;
     min-width: 200px;
     flex: 1;
-
 }
 
 .left-container h1 {
-    font-size: 50px;
+    font-size: 3rem;
+    color: #0EA5E9;
 }
 
 .left-container p {
     font-size: 16px;
+    color:  #334155;
 }
 
 .btn-container {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
+    height: 40px;
+}
+
+button {
+    color: #FFFFFF;
+    background-color: #F59E0B;
+    border: 2px solid gray;
+}
+
+button:hover {
+    color: #d97706; 
+}
+
+
+
+.btn-first {
+    margin-right: 10px;
 }
 
 .right-container {
@@ -72,33 +114,76 @@ div.logo-img {
     min-width: 200px;
     min-height: 350px;
     flex: 1;
+    clip-path: ellipse(70% 40% at 50% 30%);;
+    
 }
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 /* About Myself */
 
 #myself-container {
     display: flex;
-    border: solid red 2px;
     height: 600px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
+    gap: 20px;
+    padding: 2rem;
 }
 
 .myself-right{
-    max-width: 500px;
-    border: 2px solid green;
+    max-width: 600px;
+    padding: 10px;
 }
+
+.myself-right h2 {
+    color: #0EA5E9;
+    font-size: 2.25rem;
+}
+
+.myself-right p, .myself-right li {
+    color: #334155;
+}
+
+.myself-right p {
+    line-height: 1.5;
+}
+
+.myself-right li::marker {
+    color: #0EA5E9;
+}
+.myself-right ul {
+    padding: 10px;
+    margin: 0;
+}
+
+
 .myself-left{
-    width: 500px;
+    width: 600px;
     border: 2px solid green;
 }
 
 /* Service */
 
 #service-container {
-    border: 2px solid red;
     min-height: 600px;
+}
+
+.service-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-header p {
+    width: 60%;
+    text-align: center;
 }
 
 .boxes-container {
@@ -109,18 +194,37 @@ div.logo-img {
     align-content: center;
     gap: 40px;
     min-height: 600px;
-    border: solid black 2px;
+}
+
+.service-header h2 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: #0EA5E9;
+    margin-bottom: 0.75rem;
+}
+
+.boxes h3 {
+    text-align: center;
+    color: #0EA5E9;
+    font-size: 1.5rem;
+}
+
+
+.boxes li {
+    color: #334155;
+}
+
+.boxes li::marker {
+    color: #0EA5E9;
 }
 
 .boxes {
-    border: 2px solid green;
+    border: 2px solid #334155;
     width: 400px;
     height: 250px;
     padding: 20px;
-}
-
-.service-header {
-    text-align: center;
+    background-color: #F1F5F9;
 }
 
 ul {
@@ -136,22 +240,32 @@ ul li {
 #support-container {
     display: flex;
     flex-flow: row wrap;
-    border: 2px solid green;
-    min-height: 550px;
+    min-height: 600px;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    background-color: #0EA5E9;
+    padding: 40px;
+    color: #FFFFFF;
+}
+
+.left-support h2 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+.left-support h3 {
+    font-size: 1.75rem;
+}
+.left-support p {
+    line-height: 1.5;
 }
 
 .right-support {
-    width: 450px;
+    width: 580px;
     border: 2px solid green;
-    height: 350px;
 }
 
 .left-support {
-    width: 450px;
-    border: 2px solid green;
-    height: 350px;
+    width: 580px;
 }
 
